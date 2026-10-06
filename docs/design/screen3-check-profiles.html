@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pre-Send Check – Check profiles</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0..1,0&amp;display=block">
+<style>
+body{margin:0}
+.ms{font-family:'Material Symbols Outlined';font-weight:400;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;direction:ltr;font-feature-settings:'liga';-webkit-font-smoothing:antialiased;font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24}
+.fill{font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24}
+a{color:#8B4A62}a:hover{color:#6F3349}
+</style>
+</helmet>
+<div style="min-height: 940px; display: flex; flex-wrap: wrap; background: #FFF8F8; color: #22191C; font-family: 'Roboto Flex', system-ui, sans-serif;">
+
+  <nav aria-label="Main" style="flex: 0 0 88px; display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 24px 0; box-sizing: border-box;">
+    <a href="CheckInput.dc.html" aria-current="page" aria-label="Check profiles" style="display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 16px; background: #8B4A62; color: #FFFFFF; text-decoration: none; margin-bottom: 20px;"><span class="ms fill" aria-hidden="true">fact_check</span></a>
+    <span aria-disabled="true" title="Not in the prototype" style="display: flex; flex-direction: column; align-items: center; gap: 4px; width: 80px; color: rgba(34,25,28,.38);"><span style="display: flex; align-items: center; justify-content: center; width: 56px; height: 32px; border-radius: 16px;"><span class="ms" aria-hidden="true">home</span></span><span style="font-size: 12px; line-height: 16px; font-weight: 500;">Home</span></span>
+    <a href="PreferenceCard.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 4px; width: 80px; text-decoration: none; color: #514347;"><span style="display: flex; align-items: center; justify-content: center; width: 56px; height: 32px; border-radius: 16px;"><span class="ms" aria-hidden="true">group</span></span><span style="font-size: 12px; line-height: 16px; font-weight: 500;">Clients</span></a>
+    <span aria-disabled="true" title="Not in the prototype" style="display: flex; flex-direction: column; align-items: center; gap: 4px; width: 80px; color: rgba(34,25,28,.38);"><span style="display: flex; align-items: center; justify-content: center; width: 56px; height: 32px; border-radius: 16px;"><span class="ms" aria-hidden="true">forum</span></span><span style="font-size: 12px; line-height: 16px; font-weight: 500;">Feedback</span></span>
+    <span aria-disabled="true" title="Not in the prototype" style="display: flex; flex-direction: column; align-items: center; gap: 4px; width: 80px; color: rgba(34,25,28,.38);"><span style="display: flex; align-items: center; justify-content: center; width: 56px; height: 32px; border-radius: 16px;"><span class="ms" aria-hidden="true">monitoring</span></span><span style="font-size: 12px; line-height: 16px; font-weight: 500;">Numbers</span></span>
+  </nav>
+
+  <main style="flex: 999 1 560px; min-width: 0; padding: 16px 32px 48px; box-sizing: border-box;">
+    <div style="max-width: 1100px; display: flex; flex-direction: column; gap: 24px;">
+
+      <header style="display: flex; align-items: center; gap: 12px; min-height: 64px;">
+        <span aria-disabled="true" title="Not in the prototype" style="display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 24px; color: rgba(34,25,28,.38);"><span class="ms" aria-hidden="true">arrow_back</span></span>
+        <h1 style="margin: 0; font-size: 28px; line-height: 36px; font-weight: 400;">Check profiles before sending</h1>
+      </header>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+
+        <section style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px;">
+          <div style="position: relative;">
+            <label for="client" style="position: absolute; top: -9px; left: 12px; padding: 0 4px; background: #FFF8F8; font-size: 12px; line-height: 16px; color: #8B4A62;">Client</label>
+            <div style="display: flex; align-items: center; height: 56px; padding: 0 12px 0 16px; border: 2px solid #8B4A62; border-radius: 4px; box-sizing: border-box;">
+              <select id="client" style="flex: 1 1 auto; border: 0; background: transparent; font: inherit; font-size: 16px; color: #22191C; outline: none; appearance: none;">
+                <option>Ananya S. · 31 · Gurugram</option>
+                <option>Ishita K. · 29 · Singapore</option>
+                <option>Dev P. · 36 · Bengaluru</option>
+              </select>
+              <span class="ms" aria-hidden="true" style="color: #514347;">arrow_drop_down</span>
+            </div>
+          </div>
+
+          <div style="position: relative;">
+            <label for="profiles" style="position: absolute; top: -9px; left: 12px; padding: 0 4px; background: #FFF8F8; font-size: 12px; line-height: 16px; color: #514347;">Candidate profiles</label>
+            <textarea id="profiles" rows="14" style="display: block; width: 100%; box-sizing: border-box; padding: 16px; border: 1px solid #837377; border-radius: 4px; background: transparent; font: inherit; font-size: 15px; line-height: 22px; color: #22191C; resize: vertical;">Vikram, 35, Noida. Senior consultant, MBA. Non-smoker, vegetarian. Never married. 5′11″. Would love to have kids someday.
+---
+Rohan, 34, Bengaluru. Product designer, M.Des. Doesn't smoke. Never married. 6′0″. Wants children. Plans to move to Delhi NCR in 1–2 years.
+---
+Karan, 32, Gurugram. Investment banker, MBA. Smokes occasionally. Never married. 5′10″. Wants a family.
+---
+Sameer, 36, Delhi. Architect, M.Arch. Non-smoker. Never married. 5′9″. Loves travel and cooking.</textarea>
+            <p style="margin: 4px 16px 0; font-size: 12px; line-height: 16px; color: #514347;">Paste any format: biodata text, portal profile or WhatsApp forward. Separate profiles with a line of ---.</p>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px;">
+            <a href="CheckResults.dc.html" style="display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 24px 0 20px; border-radius: 24px; background: #8B4A62; color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 500;"><span class="ms" aria-hidden="true" style="font-size: 20px;">fact_check</span>Check 4 profiles</a>
+            <button type="button" disabled title="Not in the prototype" style="display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 24px 0 20px; border-radius: 24px; border: 1px solid rgba(34,25,28,.12); background: transparent; color: rgba(34,25,28,.38); font: inherit; font-size: 14px; font-weight: 500;"><span class="ms" aria-hidden="true" style="font-size: 20px;">upload_file</span>Upload biodata PDF</button>
+          </div>
+
+          <div style="display: flex; gap: 12px; padding: 12px 16px; border-radius: 12px; background: #F4E4E7; color: #514347; font-size: 14px; line-height: 20px;">
+            <span class="ms" aria-hidden="true" style="font-size: 20px;">shield_person</span>
+            <span>Names, phone numbers and emails are removed before any text is read. Only the standard profile fields are pulled out.</span>
+          </div>
+        </section>
+
+        <aside style="flex: 1 1 300px; padding: 20px 24px; border-radius: 12px; background: #FAEAED; display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+            <h2 style="margin: 0; font-size: 16px; line-height: 24px; font-weight: 500;">Checking against Ananya's card</h2>
+            <a href="PreferenceCard.dc.html" style="font-size: 14px; font-weight: 500;">Edit</a>
+          </div>
+          <div>
+            <p style="margin: 0 0 8px; font-size: 12px; line-height: 16px; font-weight: 500; color: #514347;">DEAL-BREAKERS</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span style="display: inline-flex; align-items: center; height: 32px; padding: 0 12px; border-radius: 8px; border: 1px solid #837377; font-size: 14px;">Non-smoker</span>
+              <span style="display: inline-flex; align-items: center; height: 32px; padding: 0 12px; border-radius: 8px; border: 1px solid #837377; font-size: 14px;">Wants children</span>
+              <span style="display: inline-flex; align-items: center; height: 32px; padding: 0 12px; border-radius: 8px; border: 1px solid #837377; font-size: 14px;">Age 30–38</span>
+              <span style="display: inline-flex; align-items: center; height: 32px; padding: 0 12px; border-radius: 8px; border: 1px solid #837377; font-size: 14px;">Never married</span>
+            </div>
+          </div>
+          <div>
+            <p style="margin: 0 0 8px; font-size: 12px; line-height: 16px; font-weight: 500; color: #514347;">WISHES</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span style="display: inline-flex; align-items: center; height: 32px; padding: 0 12px; border-radius: 8px; border: 1px solid #D5C2C6; font-size: 14px; color: #514347;">5′9″+</span>
+              <span style="display: inline-flex; align-items: center; height: 32px; padding: 0 12px; border-radius: 8px; border: 1px solid #D5C2C6; font-size: 14px; color: #514347;">Delhi NCR</span>
+              <span style="display: inline-flex; align-items: center; height: 32px; padding: 0 12px; border-radius: 8px; border: 1px solid #D5C2C6; font-size: 14px; color: #514347;">Postgraduate</span>
+              <span style="display: inline-flex; align-items: center; height: 32px; padding: 0 12px; border-radius: 8px; border: 1px solid #D5C2C6; font-size: 14px; color: #514347;">Vegetarian</span>
+            </div>
+          </div>
+          <div style="border-top: 1px solid #D5C2C6; padding-top: 16px;">
+            <p style="margin: 0 0 8px; font-size: 12px; line-height: 16px; font-weight: 500; color: #514347;">WHAT YOU'LL GET</p>
+            <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 20px;">
+              <li style="display: flex; gap: 8px; align-items: center;"><span class="ms fill" aria-hidden="true" style="font-size: 20px; color: #BA1A1A;">block</span><span><b>Red</b> · breaks a deal-breaker</span></li>
+              <li style="display: flex; gap: 8px; align-items: center;"><span class="ms fill" aria-hidden="true" style="font-size: 20px; color: #8A5300;">warning</span><span><b>Amber</b> · misses a wish</span></li>
+              <li style="display: flex; gap: 8px; align-items: center;"><span class="ms fill" aria-hidden="true" style="font-size: 20px; color: #2E6B3A;">check_circle</span><span><b>Green</b> · fits</span></li>
+              <li style="display: flex; gap: 8px; align-items: center;"><span class="ms fill" aria-hidden="true" style="font-size: 20px; color: #514347;">help</span><span><b>Grey</b> · not mentioned, confirm first</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":940}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
